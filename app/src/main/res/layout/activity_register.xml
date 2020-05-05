@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".RegisterActivity">
+
+    <EditText
+            android:id="@+id/etRegisterUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:focusable="true"
+             />
+
+    <EditText
+            android:id="@+id/etRegisterPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_below="@+id/etRegisterUsername"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/etRegisterUsername"
+            android:layout_alignEnd="@+id/etRegisterUsername"
+             />
+
+    <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="212dp"
+            android:layout_height="35dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:entries="@array/usertypes"
+            android:spinnerMode="dropdown"
+            android:layout_below="@+id/etRegisterPassword"
+            android:layout_alignRight="@+id/etRegisterPassword"
+            android:layout_alignLeft="@+id/etRegisterPassword"
+
+            />
+
+
+
+    <TextView
+            android:id="@+id/btnGoToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Sign in here."
+            android:layout_below="@+id/btnRegister"
+            android:layout_centerHorizontal="true"
+            />
+
+
+
+    <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:layout_below="@+id/spinner"
+            android:layout_centerHorizontal="true"
+             />
+
+</RelativeLayout>

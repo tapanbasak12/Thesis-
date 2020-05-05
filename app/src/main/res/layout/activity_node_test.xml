@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".nodeTestActivity">
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:layout_above="@+id/btnRequest"
+        android:text="http://192.178.1.113:3000/api/txn/create/ehr"
+        android:layout_centerHorizontal="true"
+            android:id="@+id/urlID">
+
+    </EditText>
+    <Button
+            android:id="@+id/btnRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to Blockchain"
+            android:layout_centerInParent="true"
+             />
+
+    <TextView
+            android:id="@+id/tvDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You'll see the response here"
+            android:layout_below="@+id/btnRequest"
+            android:layout_centerHorizontal="true"
+            />
+
+
+
+</RelativeLayout>
